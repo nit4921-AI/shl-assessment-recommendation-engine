@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# VS Code
+.vscode/
+
+# Data files
+data/*.csv
+!data/shl_catalog.csv
+submission.csv
+
+# OS junk
+.DS_Store
+Thumbs.db

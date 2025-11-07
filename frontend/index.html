@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHL Assessment Recommendation Engine</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>SHL Assessment Recommendation Engine</h1>
+      <p class="subtitle">
+        Paste a job description or type a natural language query below — we’ll recommend a balanced set of
+        <strong>Knowledge & Skills (K)</strong> and <strong>Personality & Behavior (P)</strong> assessments.
+      </p>
+    </div>
+  </header>
+
+  <!-- Input Section -->
+  <section class="input-section">
+    <div class="container">
+      <div class="input-wrapper">
+        <input
+          id="query"
+          type="text"
+          placeholder="e.g., Need a Java developer who collaborates with teams"
+        />
+        <button id="btn" class="btn-primary">Get Recommendations</button>
+      </div>
+
+      <div class="controls">
+        <label>Top-K
+          <select id="topk">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+          </select>
+        </label>
+
+        <label class="switch">
+          <input id="balance" type="checkbox" checked />
+          <span class="slider"></span>
+          <span class="label">Balance K / P</span>
+        </label>
+
+        <span id="apiStatus" class="status">Checking API...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <main class="container results">
+    <div id="results" class="cards"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Built for the SHL take-home. This UI is a themed demo and not affiliated with SHL.</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
