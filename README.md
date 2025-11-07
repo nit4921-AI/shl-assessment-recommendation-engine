@@ -137,8 +137,8 @@ It connects to your running API (default `http://127.0.0.1:8000`)
 and allows querying assessments interactively.
 
 🖼️ **Preview Screenshot**
-*(You can replace this later with your actual screenshot)*
-![UI Screenshot](https://via.placeholder.com/1000x500.png?text=SHL+Assessment+Recommendation+Engine+UI)
+<img width="1899" height="898" alt="image" src="https://github.com/user-attachments/assets/dbf41eb2-2542-4f7d-8f70-a6c4b6247100" />
+
 
 ---
 
